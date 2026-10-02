@@ -347,6 +347,13 @@ Create a dictionary with at least 5 products and their prices.
 Ask the user to enter a product name.
 If found, print the price.'''
 
+dicti={'mobile':20000,'tv':40000,'laptop':50000,'mouse':2000,'fridge':15000}
+product=input('Enter the product name: ')
+if dicti.get(product):
+    print(dicti.get(product))
+else:
+    print('Product not available.')
+
 '''Use Case 2: City Entry and Duplicate Removal
 Ask the user to enter city names repeatedly.
  Stop when the user types "exit".
