@@ -245,7 +245,8 @@ if age >= 18 and citizen.lower() == "yes":
 else:
  print("Not eligible")
 
- '''Use Case 1: Banking Eligibility Check
+ '''I. Conditional Structure
+ Use Case 1: Banking Eligibility Check
  Write a program that asks the user for:
      Age, Monthly income
  Conditions:
@@ -306,6 +307,27 @@ for i in range(1,11):
     mul=num*i
     print(f'{num}x{i}={mul}')
 
+'''Use Case 2: Sum of Even and Odd Numbers
+ Write a program that asks the user for a positive integer n.
+ Using a loop, calculate and print:
+Sum of all even numbers from 1 to n
+Sum of all odd numbers from 1 to n'''
+
+n=int(input('Enter the positive integer: '))
+if n<=0:
+    print('invalid number, please enter the positive integer')
+else:
+    even=0
+    odd=0
+    for i in range(1,n+1):
+        if i%2==0:
+           even=even+i
+        else:
+           odd=odd+i
+    print(f'sum of even number value is: {even}')
+    print(f'sum of odd number value is: {odd}')
+
+
 '''Use Case 3 (Bug Fixing): Infinite Loop Issue
  Fix the code below so that it prints numbers from 1 to 10 and stops correctly.
 Incorrect code:
@@ -324,6 +346,29 @@ Use Case 1: Product Price Lookup
 Create a dictionary with at least 5 products and their prices.
 Ask the user to enter a product name.
 If found, print the price.'''
+
+'''Use Case 2: City Entry and Duplicate Removal
+Ask the user to enter city names repeatedly.
+ Stop when the user types "exit".
+Requirements:
+Store every entered city name in a list (even if it's repeated).
+Also store the cities in a set to maintain only unique values.
+Finally print:
+The complete list of entered cities (with duplicates).
+The set of unique cities (duplicates removed).
+'''
+
+lis=[]
+set1=set()
+while True:
+    city=input('Enter the city name: ')
+    if city.lower()=='exit':
+        break
+    else:
+        lis.append(city)
+        set1.add(city)
+print(f'The complete list of entered cities {lis}')
+print(f'The set of unique cities  {set1}')
 
 '''Use Case 3 (Bug Fixing): List Index Error
  Fix the following code so that it prints all items correctly without an index error:
