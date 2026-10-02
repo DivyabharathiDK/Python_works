@@ -474,6 +474,25 @@ def perform_operation(num, operation):
     else:
         return 'Invalid operation'
 
+'''Use Case 4  (Bug Fixing): Fix the Function Logic
+The following function is supposed to calculate the square of a number and return the result.
+ However, it contains multiple errors. Fix the code so it works correctly.
+def find_square():
+    num = input("Enter a number: ")
+    result = num * num
+    print("Square of the number is" result)
+    return result
+Expected behavior:
+The input must be converted to an integer.
+The function should print the correct result using proper formatting.
+The function must return the square value without errors.
+'''
+
+def find_square():
+    num = int(input("Enter a number: "))
+    result = num * num
+    print(f'Square of the number is: {result}')
+    return result
 
 
 
