@@ -448,6 +448,31 @@ except ZeroDivisionError as e:
 except Exception as e:
     print(e)
 
+'''M. Function Based Programming'''
+'''Usecase3: Number Utility Tool
+Create functions:
+is_even(num) → returns True/False
+find_max(*numbers) → returns highest number from arguments
+perform_operation(num, operation) →
+If operation = "square" → return num*num
+If operation = "cube" → return numnumnum
+If unknown → return "Invalid operation"
+Test the functions with at least 5 numbers.
+'''
+def is_even(num):
+    if num%2==0:
+        return True
+    else:
+        return False
+def find_max(*numbers):
+    return max(numbers)
+def perform_operation(num, operation):
+    if operation.lower() == "square":
+        return num*num
+    elif operation.lower() == "cube":
+        return num*num*num
+    else:
+        return 'Invalid operation'
 
 
 
